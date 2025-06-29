@@ -1,4 +1,3 @@
-
 // Global variables
 let currentUser = null;
 let events = [];
@@ -55,6 +54,87 @@ function loadData() {
             venue: "Innovation Lab, Austin",
             description: "Hands-on workshop covering the fundamentals of AI and machine learning with practical applications.",
             capacity: 100,
+            registrations: 0
+        },
+        {
+            id: 4,
+            title: "Mobile App Development Bootcamp",
+            date: "2024-07-28T09:30",
+            venue: "Silicon Valley Tech Center, California",
+            description: "Intensive 2-day bootcamp covering iOS and Android development using React Native and Flutter.",
+            capacity: 80,
+            registrations: 0
+        },
+        {
+            id: 5,
+            title: "Cybersecurity & Data Privacy Conference",
+            date: "2024-08-12T08:00",
+            venue: "Security Institute, Washington DC",
+            description: "Learn about the latest cybersecurity threats, data protection strategies, and compliance requirements.",
+            capacity: 250,
+            registrations: 0
+        },
+        {
+            id: 6,
+            title: "Startup Pitch Competition",
+            date: "2024-08-18T13:00",
+            venue: "Entrepreneur Hub, Boston",
+            description: "Watch innovative startups pitch their ideas to investors and compete for funding opportunities.",
+            capacity: 300,
+            registrations: 0
+        },
+        {
+            id: 7,
+            title: "Cloud Computing & DevOps Masterclass",
+            date: "2024-09-02T10:00",
+            venue: "Cloud Campus, Seattle",
+            description: "Master AWS, Azure, and Google Cloud platforms while learning modern DevOps practices and tools.",
+            capacity: 120,
+            registrations: 0
+        },
+        {
+            id: 8,
+            title: "UX/UI Design Workshop",
+            date: "2024-08-25T11:00",
+            venue: "Creative Studio, Los Angeles",
+            description: "Learn user experience design principles, prototyping tools, and create stunning user interfaces.",
+            capacity: 60,
+            registrations: 0
+        },
+        {
+            id: 9,
+            title: "Blockchain & Cryptocurrency Seminar",
+            date: "2024-09-08T14:30",
+            venue: "FinTech Center, Miami",
+            description: "Explore blockchain technology, smart contracts, DeFi, and the future of digital currencies.",
+            capacity: 180,
+            registrations: 0
+        },
+        {
+            id: 10,
+            title: "Data Science & Analytics Summit",
+            date: "2024-09-15T09:00",
+            venue: "Data Institute, Chicago",
+            description: "Dive deep into data analysis, visualization, machine learning models, and business intelligence.",
+            capacity: 200,
+            registrations: 0
+        },
+        {
+            id: 11,
+            title: "E-commerce Business Strategy Forum",
+            date: "2024-09-22T10:30",
+            venue: "Commerce Plaza, Atlanta",
+            description: "Learn effective e-commerce strategies, marketplace optimization, and digital sales techniques.",
+            capacity: 140,
+            registrations: 0
+        },
+        {
+            id: 12,
+            title: "Green Technology & Sustainability Expo",
+            date: "2024-10-05T08:30",
+            venue: "Eco Center, Portland",
+            description: "Discover renewable energy solutions, sustainable technologies, and environmental innovations.",
+            capacity: 300,
             registrations: 0
         }
     ];
