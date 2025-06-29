@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Portal - Browse Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Event Portal</h1>
+            <div class="nav-menu">
+                <span id="userEmail" class="user-info"></span>
+                <button id="logoutBtn" class="btn btn-outline">Logout</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="dashboard-header">
+            <h2>Available Events</h2>
+            <p>Discover and register for upcoming events</p>
+        </div>
+        
+        <div id="eventsContainer" class="events-grid">
+            <!-- Events will be loaded here -->
+        </div>
+    </div>
+    
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Event Registration</h3>
+                <span class="close">&times;</span>
+            </div>
+            <form id="registrationForm" class="registration-form">
+                <div id="eventDetails" class="event-details-modal"></div>
+                
+                <div class="form-group">
+                    <label for="regName">Full Name</label>
+                    <input type="text" id="regName" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regEmail">Email Address</label>
+                    <input type="email" id="regEmail" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regPhone">Phone Number</label>
+                    <input type="tel" id="regPhone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="regCompany">Company/Organization (Optional)</label>
+                    <input type="text" id="regCompany" name="company">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Register for Event</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Registration Successful!</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="confirmation-content">
+                <div class="success-icon">✓</div>
+                <p>Thank you for registering! You will receive a confirmation email shortly.</p>
+                <button class="btn btn-primary" onclick="closeModal('confirmationModal')">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
